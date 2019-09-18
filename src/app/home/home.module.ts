@@ -1,3 +1,4 @@
+import { CharacterComponent } from './../component/character/character.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
@@ -18,6 +19,6 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, CharacterComponent]
 })
 export class HomePageModule {}
