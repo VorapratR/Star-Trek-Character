@@ -1,10 +1,12 @@
-<div *ngIf="character.deceased">
-<p>
-    Character-Name: {{character.name}}
-</p>
-</div>
 <div *ngIf="!character.deceased">
+  <p>
+    <ion-icon name="star"></ion-icon> 
+    Character-Name: {{character.name}}
+  </p>
+</div>
+<div *ngIf="character.deceased">
   <p style="color: gray">
+    <ion-icon name="bonfire"></ion-icon>
     Character-Name:{{character.name}} 
   </p>
 </div>
