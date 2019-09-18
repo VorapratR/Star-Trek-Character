@@ -13,7 +13,7 @@ export class HomePage implements OnInit, OnDestroy {
   pageIndex = 0;
   lastPage  = false;
   private characterSubscribe: Subscription;
-  private constructor(private starTrekService: StarTrekService) {}
+  constructor(private starTrekService: StarTrekService) {}
   ngOnInit(): void {
     this.characterSubscribe = this.starTrekService.loadCharacter(0).subscribe(
       results => {
